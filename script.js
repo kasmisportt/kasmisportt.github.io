@@ -2,46 +2,46 @@
 const productos = [
     {
         id: 1,
-        nombre: "Nike Air Max 90",
+        nombre: "zapato xd",
         precio: "$450.000",
         emoji: "👟",
         imagen: "images.jpg",
-        descripcion: "Clásico atemporal con amortiguación Air máxima."
+        descripcion: "C."
     },
     {
         id: 2,
-        nombre: "Adidas Ultraboost",
+        nombre: "el nopor es malo",
         precio: "$520.000",
         emoji: "🔥",
-        descripcion: "Tecnología Boost para máxima comodidad. Ideal para running."
+        descripcion: "."
     },
     {
         id: 3,
-        nombre: "Puma RS-X",
+        nombre: "el hentai si",
         precio: "$380.000",
         emoji: "⚡",
-        descripcion: "Diseño futurista con excelente soporte. Estilo urbano."
+        descripcion: " urbano."
     },
     {
         id: 4,
-        nombre: "New Balance 574",
+        nombre: "asco los otakus",
         precio: "$320.000",
         emoji: "🏃‍♂️",
-        descripcion: "Ícono retro con gran durabilidad. Comodidad todo el día."
+        descripcion: "el día."
     },
     {
         id: 5,
-        nombre: "Under Armour HOVR",
+        nombre: "quein mira hentai en esta epoca?",
         precio: "$480.000",
         emoji: "💨",
-        descripcion: "Tecnología HOVR para retorno de energía. Perfecto para entrenamientos."
+        descripcion: "Tecnoloos."
     },
     {
         id: 6,
-        nombre: "Vans Old Skool",
+        nombre: "andas valiendo verga",
         precio: "$280.000",
         emoji: "🛹",
-        descripcion: "Clásico skater con suela waffle. Estilo auténtico."
+        descripcion: "Co."
     }
 ];
 
