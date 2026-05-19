@@ -1,0 +1,742 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+
+    --primary-color:#1a1a1a;
+    --secondary-color:#333;
+    --accent-color:#ff4444;
+    --text-light:#666;
+    --white:#fff;
+
+    --shadow:0 10px 30px rgba(0,0,0,0.08);
+    --shadow-hover:0 20px 40px rgba(0,0,0,0.15);
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    line-height:1.6;
+    color:var(--primary-color);
+
+    overflow-x:hidden;
+
+    background:#f5f5f5;
+
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container{
+
+    max-width:1300px;
+
+    margin:0 auto;
+
+    padding:0 20px;
+
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header{
+
+    position:fixed;
+
+    top:0;
+
+    width:100%;
+
+    background:rgba(255,255,255,0.95);
+
+    backdrop-filter:blur(10px);
+
+    z-index:1000;
+
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+
+}
+
+.navbar{
+
+    padding:18px 0;
+
+}
+
+.nav-container{
+
+    max-width:1300px;
+
+    margin:0 auto;
+
+    padding:0 20px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.logo h2{
+
+    color:var(--accent-color);
+
+    font-weight:700;
+
+    font-size:2rem;
+
+}
+
+.nav-menu{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:2rem;
+
+}
+
+.nav-link{
+
+    text-decoration:none;
+
+    color:var(--primary-color);
+
+    font-weight:600;
+
+    transition:0.3s;
+
+}
+
+.nav-link:hover{
+
+    color:var(--accent-color);
+
+}
+
+.hamburger{
+
+    display:none;
+
+    flex-direction:column;
+
+    cursor:pointer;
+
+}
+
+.hamburger span{
+
+    width:25px;
+
+    height:3px;
+
+    background:black;
+
+    margin:3px 0;
+
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+
+    min-height:70vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    padding:140px 20px 80px;
+
+    background:linear-gradient(135deg,#f5f7fa 0%,#e4ecf7 100%);
+
+}
+
+.hero-title{
+
+    font-size:clamp(2.5rem,5vw,4rem);
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+.highlight{
+
+    color:var(--accent-color);
+
+}
+
+.hero-subtitle{
+
+    font-size:1.2rem;
+
+    color:var(--text-light);
+
+    margin-bottom:30px;
+
+}
+
+.cta-button{
+
+    display:inline-block;
+
+    background:var(--accent-color);
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:15px 30px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:0.3s;
+
+    box-shadow:var(--shadow);
+
+}
+
+.cta-button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:var(--shadow-hover);
+
+}
+
+/* =========================
+   PRODUCTOS
+========================= */
+
+.productos{
+
+    padding:100px 0;
+
+    background:#f5f5f5;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    font-size:3rem;
+
+    margin-bottom:10px;
+
+}
+
+.section-subtitle{
+
+    text-align:center;
+
+    color:var(--text-light);
+
+    margin-bottom:40px;
+
+}
+
+/* =========================
+   AVISO
+========================= */
+
+.aviso-pagos{
+
+    background:#fff3cd;
+
+    color:#856404;
+
+    padding:18px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+    font-weight:600;
+
+}
+
+/* =========================
+   MENÚ MARCAS
+========================= */
+
+.menu-marcas{
+
+    display:flex;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    margin-bottom:50px;
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,0.06);
+
+}
+
+.btn-marca{
+
+    border:none;
+
+    background:#111;
+
+    color:white;
+
+    padding:10px 18px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    font-size:14px;
+
+    transition:0.3s;
+
+    white-space:nowrap;
+
+}
+
+.btn-marca:hover{
+
+    background:var(--accent-color);
+
+    transform:translateY(-2px);
+
+}
+
+/* =========================
+   MARCAS
+========================= */
+
+.marca-section{
+
+    margin-bottom:70px;
+
+}
+
+.marca-titulo{
+
+    font-size:2rem;
+
+    margin-bottom:25px;
+
+    padding-left:15px;
+
+    border-left:6px solid var(--accent-color);
+
+}
+
+/* =========================
+   GRID PRODUCTOS
+========================= */
+
+.productos-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+}
+
+/* =========================
+   CARD
+========================= */
+
+.producto-card{
+
+    background:white;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+    transition:0.3s;
+
+    cursor:pointer;
+
+}
+
+.producto-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-hover);
+
+}
+
+.producto-imagen{
+
+    width:100%;
+
+    height:280px;
+
+    overflow:hidden;
+
+    background:#eee;
+
+}
+
+.producto-imagen img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:0.4s;
+
+}
+
+.producto-card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.producto-content{
+
+    padding:22px;
+
+}
+
+.producto-nombre{
+
+    font-size:1.5rem;
+
+    margin-bottom:10px;
+
+    font-weight:700;
+
+}
+
+.producto-precio{
+
+    font-size:1.8rem;
+
+    color:var(--accent-color);
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+}
+
+.producto-descripcion{
+
+    color:var(--text-light);
+
+    margin-bottom:20px;
+
+    line-height:1.5;
+
+}
+
+/* =========================
+   BOTÓN COMPRAR
+========================= */
+
+.btn-comprar{
+
+    width:100%;
+
+    border:none;
+
+    background:var(--accent-color);
+
+    color:white;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    transition:0.3s;
+
+}
+
+.btn-comprar:hover{
+
+    background:#e63939;
+
+    transform:scale(1.02);
+
+}
+
+/* =========================
+   CONTACTO
+========================= */
+
+.contacto{
+
+    padding:100px 0;
+
+    background:white;
+
+}
+
+.contacto-content{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:40px;
+
+    align-items:center;
+
+}
+
+.contact-item{
+
+    margin-bottom:20px;
+
+    font-size:1.1rem;
+
+}
+
+.contact-item a{
+
+    color:var(--accent-color);
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.contact-item a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+
+    background:#111;
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px 20px;
+
+}
+
+/* =========================
+   WHATSAPP FLOAT
+========================= */
+
+.whatsapp-float{
+
+    position:fixed;
+
+    width:65px;
+
+    height:65px;
+
+    bottom:25px;
+
+    right:25px;
+
+    background:#25d366;
+
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:1.8rem;
+
+    text-decoration:none;
+
+    z-index:999;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+
+    transition:0.3s;
+
+}
+
+.whatsapp-float:hover{
+
+    transform:scale(1.1);
+
+}
+
+/* =========================
+   BOTÓN VOLVER A MARCAS
+========================= */
+
+#btnSubirMarcas{
+
+    position:fixed;
+
+    bottom:100px;
+
+    right:25px;
+
+    background:#111;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 16px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    z-index:999;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:0.3s;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+
+}
+
+#btnSubirMarcas:hover{
+
+    background:#ff4444;
+
+    transform:translateY(-3px);
+
+}
+
+#btnSubirMarcas.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .nav-menu{
+
+        position:fixed;
+
+        left:-100%;
+
+        top:70px;
+
+        flex-direction:column;
+
+        background:white;
+
+        width:100%;
+
+        text-align:center;
+
+        transition:0.3s;
+
+        padding:30px 0;
+
+    }
+
+    .nav-menu.active{
+
+        left:0;
+
+    }
+
+    .hamburger{
+
+        display:flex;
+
+    }
+
+    .hero{
+
+        padding:120px 20px 60px;
+
+    }
+
+    .productos-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .contacto-content{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .marca-titulo{
+
+        font-size:1.5rem;
+
+    }
+
+}
