@@ -288,24 +288,6 @@ const productos = [
 
     },
     {
-        id: 33,
-        nombre: "Puma California",
-        precio: "$250.000",
-        marca: "Puma",
-        imagen: "33.webp",
-        descripcion: "Kaki / Blanco"
-
-    },
-    {
-        id: 34,
-        nombre: "Nike Dunk Low",
-        precio: "$250.000",
-        marca: "Nike",
-        imagen: "34.webp",
-        descripcion: "Blanco / Vino / Crema"
-
-    },
-    {
         id: 35,
         nombre: "On Running Cloudnova",
         precio: "$250.000",
